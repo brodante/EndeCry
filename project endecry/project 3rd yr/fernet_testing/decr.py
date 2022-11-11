@@ -4,7 +4,7 @@ from cryptography.fernet import Fernet
 files = []
 
 for file in os.listdir():
-    if file == "encr.py" or file == "decr.py" or file == "test_key.key":
+    if file == "encr.py" or file == "decr.py" or file == "test_key.key" or file == "decr2.py":
         continue
     if os.path.isfile(file):
         files.append(file)
