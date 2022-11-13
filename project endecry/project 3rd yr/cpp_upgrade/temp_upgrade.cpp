@@ -17,6 +17,9 @@
 using namespace std;
 lli pass=0;
 string ans,backup;
+lli a,i=0,temp,len;
+string str;
+char x;
 //using namespace boost::multiprecision;
 string decrypt(string backup)
   {
@@ -112,14 +115,77 @@ void encryptv2()
     encrypt(str);
     file.close();
   }
+  void enc_option()
+  {
+    option
+    cout<<" 1. Enter a text \n";
+    cout<<" 2. Choose a .txt or .dat (binary) file by giving its name and extension \n\n\n \t";
+
+    cin>>a;
+    if(a==1)
+      {
+        cout<<"Enter your text below : \n";
+        unbuffer
+        getline(cin,str);
+        ans=encrypt(str);
+      }
+    else if(a==2)
+      {
+        string f;
+        cout<<"Enter the Filename(with extension).\n\n\t";
+        cin>>f;
+        ifstream file;
+        file.open(f);
+        if(file)
+          {
+            getline(file,backup);
+            ans=encrypt(backup);
+          }
+        else
+          {
+            cout<<"\n\nEnter a valid Filename...";
+            getch();
+          }
+      }
+    cout<<"\n_________________________________________________________________\n\n"<<ans<<"\n\n";
+/*---------X------------X-----------X-----------X----------X----------X--------X---------*/
+
+    system("cls");
+
+/*---------X------------X-----------X-----------X----------X----------X--------X---------*/
+    option
+    cout<<"1. default encryption (less secure)\n";
+    cout<<"2. ";
+
+
+
+
+
+
+
+/*---------X------------X-----------X-----------X----------X----------X--------X---------*/
+
+
+
+
+    cout<<"THIS IS YOUR ENCRYPTED TEXT \n\n Choose an option from below : \n \t1. Manually copy this text. \n \t2. Save this text to a file. \n\n";
+    cin>>a;
+    if(a==1)
+    {
+      cout<<"The text is succesfully saved in a variable named \"backup\" which is printed above, you can note it down "<<char(24)<<"\n\n\t";
+      getch();
+    }
+    else if(a==2)
+      {
+        save(ans);
+      }
+  }
+
 int main()
 {
   //ios_base::sync_with_stdio(false);
    //cin.tie(NULL);
    //cout.tie(NULL);
-   lli a,i=0,temp,len;
-   string str;
-   char x;
    while(1)
      {
        i=0,pass=0;
@@ -135,59 +201,9 @@ int main()
        cin>>a;
        system("cls");
        if(a==1)
-        {
-          option
-          cout<<" 1. Enter a text \n";
-          cout<<" 2. Choose a .txt or .dat (binary) file by giving its name and extension \n\n\n \t";
-
-          cin>>a;
-
-/*---------X------------X-----------X-----------X----------X----------X--------X---------*/
-
-          system("cls");
-
-/*---------X------------X-----------X-----------X----------X----------X--------X---------*/
-
-          if(a==1)
-            {
-              cout<<"Enter your text below : \n";
-              unbuffer
-              getline(cin,str);
-              ans=encrypt(str);
-            }
-          else if(a==2)
-            {
-              string f;
-              cout<<"Enter the Filename(with extension).\n\n\t";
-              cin>>f;
-              ifstream file;
-              file.open(f);
-              if(file)
-                {
-                  getline(file,backup);
-                  ans=encrypt(backup);
-                }
-              else
-                {
-                  cout<<"\n\nEnter a valid Filename...";
-                  getch();
-                  break;
-                }
-            }
-          cout<<"\n_________________________________________________________________\n\n"<<ans<<"\n\n";
-          cout<<"THIS IS YOUR ENCRYPTED TEXT \n\n Choose an option from below : \n \t1. Manually copy this text. \n \t2. Save this text to a file. \n\n";
-          cin>>a;
-          if(a==1)
-          {
-            cout<<"The text is succesfully saved in a variable named \"backup\" which is printed above, you can note it down "<<char(24)<<"\n\n\t";
-            getch();
-          }
-          else if(a==2)
-            {
-              save(ans);
-            }
-        }
-
+       {
+         enc_option();
+       }
 
  /*---------X------------X-----------X-----------X----------X----------X--------X---------*/
 
