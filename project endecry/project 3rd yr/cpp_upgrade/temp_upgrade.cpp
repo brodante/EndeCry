@@ -127,7 +127,7 @@ void encryptv2()
         cout<<"Enter your text below : \n";
         unbuffer
         getline(cin,str);
-        ans=encrypt(str);
+        //ans=encrypt(str);
       }
     else if(a==2)
       {
@@ -138,8 +138,8 @@ void encryptv2()
         file.open(f);
         if(file)
           {
-            getline(file,backup);
-            ans=encrypt(backup);
+            getline(file,str);
+            //ans=encrypt(str);
           }
         else
           {
@@ -155,9 +155,16 @@ void encryptv2()
 /*---------X------------X-----------X-----------X----------X----------X--------X---------*/
     option
     cout<<"1. default encryption (less secure)\n";
-    cout<<"2. ";
+    cout<<"2. generate a random key and encrypt (more secure)\n";
+    cout<<"3. provide your own key and encrypt (depends on the strength of the key)\n";
+    cout<<"4. "
 
-
+    cin>>a;
+    if(a==1)
+      {
+        ans=encrypt(str);
+        cout<<ans;
+      }
 
 
 
@@ -167,8 +174,7 @@ void encryptv2()
 
 
 
-
-    cout<<"THIS IS YOUR ENCRYPTED TEXT \n\n Choose an option from below : \n \t1. Manually copy this text. \n \t2. Save this text to a file. \n\n";
+    cout<<" THIS IS YOUR ENCRYPTED TEXT \n\n Choose an option from below : \n \t1. Manually copy this text. \n \t2. Save this text to a file. \n\n";
     cin>>a;
     if(a==1)
     {
