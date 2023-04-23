@@ -157,7 +157,7 @@ void encryptv2()
     cout<<"1. default encryption (less secure)\n";
     cout<<"2. generate a random key and encrypt (more secure)\n";
     cout<<"3. provide your own key and encrypt (depends on the strength of the key)\n";
-    cout<<"4. "
+    cout<<"4. ";
 
     cin>>a;
     if(a==1)
