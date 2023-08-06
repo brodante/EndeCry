@@ -16,7 +16,7 @@ Endecry is a powerful encryption and decryption tool designed for enhanced secur
   git clone https://github.com/brodante/Endecry.git
 
 2. **Build the project:**
-  cd Endecry
+  cd EndeCry
   make
 
 4. **Encrypt a file:**
