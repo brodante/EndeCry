@@ -1,7 +1,5 @@
 # Endecry - Secure Encryption and Decryption Tool
 
-![Endecry Banner](https://example.com/path/to/banner.png)
-
 Endecry is a powerful encryption and decryption tool designed for enhanced security and data protection. Developed in C++, it offers a user-friendly command-line interface, enabling users to encrypt and decrypt files effortlessly. Utilizing modern cryptographic algorithms, Endecry ensures the confidentiality of sensitive data. Safeguard your files with ease using Endecry.
 
 ## Key Features
