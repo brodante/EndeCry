@@ -37,7 +37,7 @@ Endecry is licensed under the [MIT License](LICENSE). Feel free to use, modify, 
 
 ## Stay Connected
 
-Follow us on [Twitter](https://twitter.com/endecry) for updates and announcements.
+Follow us on [Twitter](https://twitter.com/singh_senpai) for updates and announcements.
 
 ---
 
