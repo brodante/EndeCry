@@ -1,8 +1,8 @@
-/*Code by Surya, Shravya, Suryansh, Shruti*/
+/*Code by Surya*/
 #include <bits/stdc++.h>
 #include <string.h>
 #include <conio.h>
-#include<stdlib.h>
+#include <stdlib.h>
 //#include <boost/multiprecision/cpp_int.hpp>
 #define lli long long
 #define pi 3.14159265358979323846
